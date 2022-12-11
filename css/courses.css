@@ -1,0 +1,36 @@
+/* --------------- Courses-1 ---------------- */
+.details {
+    margin: 8rem 0 2rem 0;
+}
+
+.details_dot {
+    padding-left: 4rem;
+}
+
+/* ---------------- Media Queries Tablets --------------- */ 
+@media screen and (max-width: 1024px) {
+    .details__container {
+        display: grid !important;
+        grid-template-columns: 20rem 20rem;
+        column-gap: 3rem;
+        row-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .details_dot {
+        display: none;
+    }
+}
+
+/* ---------------- Media Queries Mobiles --------------- */ 
+@media screen and (max-width: 600px) {
+    .details__container {
+        display: grid !important;
+        grid-template-columns: 1fr;
+    }
+
+    .details_dot {
+        display: none;
+    }
+}

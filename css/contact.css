@@ -1,0 +1,162 @@
+/* ---------------- Contact --------------- */
+.contact__container {
+    background: var(--bgColor8);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 9rem auto;
+    border-radius: 1rem;
+}
+
+/* ---------------- Aside --------------- */
+.contact__aside {
+    background: var(--greenColor);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.aside__image {
+    width: 13rem;
+    margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+
+}
+
+.contact__aside p {
+    text-align: left;
+    font-size: 1.1rem;
+    color: var(--white4);
+    margin-bottom: 2rem;
+}
+
+.contact__details li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--white4);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact__details li:hover {
+    color: var(--lightBlue2);
+}
+
+.contact__socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.contact__socials a {
+    background: var(--white4);
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    color: var(--greenColor);
+    transition: var(--transition);
+}
+
+.contact__socials a:hover {
+    background: var(--borderRed);
+    color: var(--white4);
+}
+
+/* ---------------- Form --------------- */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    background: var(--bgColor1);
+    border-radius: 1rem;
+    color: var(--primaryTextBlack2);
+}
+
+input:hover, textarea:hover {
+    background: var(--white4);
+}
+
+.contact_btn {
+    width: max-content;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+
+/* ---------------- Media Queries Tablets --------------- */ 
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+
+    .contact__container {
+        height: auto;
+        gap: 1.5rem;
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+
+    .contact__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+        
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+/* ---------------- Media Queries Mobiles --------------- */ 
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 1rem;
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+        /* top  left-right  bottom */
+    }
+
+    .form__name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__name input[type='text'] {
+        width: 100%;
+    }
+}
